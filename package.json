@@ -1,8 +1,11 @@
 {
   "name": "gen-exp-project",
-  "version": "1.0.0",
+  "version": "0.0.1-dev",
   "description": "Simple express generator",
-  "main": "index.js",
+  "bin": {
+    "express": "./bin/main.js"
+  },
+  "main": "./bin/main.js",
   "scripts": {
     "test": "mocha"
   },
@@ -21,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/feardarkness/gen-exp-project/issues"
   },
-  "homepage": "https://github.com/feardarkness/gen-exp-project#readme"
+  "homepage": "https://github.com/feardarkness/gen-exp-project#readme",
+  "engines": {
+    "node": ">= 8.00"
+  }
 }
