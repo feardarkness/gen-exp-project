@@ -1,8 +1,7 @@
 require("dotenv").config();
-const app = require("./app");
-const debug = require("debug")("index");
-const http = require("http");
 const log = require("./lib/logger");
+const app = require("./app");
+const http = require("http");
 
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
@@ -23,9 +22,6 @@ function normalizePort(val) {
   return false;
 }
 
-/**
- * Event listener for HTTP server "error" event.
- */
 function onError(error) {
   if (error.syscall !== "listen") {
     throw error;
@@ -51,6 +47,5 @@ function onError(error) {
 function onListening() {
   const addr = server.address();
   const bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
-  debug("Listening on " + bind);
   log.info(`App started, listening on port ${bind}`);
 }
