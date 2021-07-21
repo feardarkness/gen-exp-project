@@ -71,6 +71,7 @@ function createApplication(name = "app", dir) {
   copyFile("gitignore", path.join(dir, ".gitignore"));
   copyFile("index.js", path.join(dir, "index.js"));
   copyFile("app.js", path.join(dir, "app.js"));
+  write(path.join(dir, "package.json"), JSON.stringify(pkg, null, 2) + "\n");
   console.log();
   exit(1);
 }
