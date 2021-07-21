@@ -27,5 +27,9 @@
   "homepage": "https://github.com/feardarkness/gen-exp-project#readme",
   "engines": {
     "node": ">= 8.00"
+  },
+  "dependencies": {
+    "minimatch": "^3.0.4",
+    "mkdirp": "^1.0.4"
   }
 }

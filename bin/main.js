@@ -4,8 +4,6 @@ const fs = require("fs");
 const minimatch = require("minimatch");
 const mkdirp = require("mkdirp");
 const path = require("path");
-const sortedObject = require("sorted-object");
-const util = require("util");
 
 const MODE_0666 = parseInt("0666", 8);
 const MODE_0755 = parseInt("0755", 8);
