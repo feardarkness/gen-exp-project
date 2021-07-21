@@ -59,7 +59,7 @@ function createApplication(name = "app", dir) {
 
   mkdir(dir, "errors");
   mkdir(dir, "logs");
-  mkdir(dir, "libs");
+  mkdir(dir, "lib");
   mkdir(dir, "services");
   mkdir(dir, "routes");
 
