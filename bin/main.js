@@ -104,12 +104,8 @@ function exit(code) {
 
 const destinationPath = ".";
 
-// App name
-const appName = path.resolve(destinationPath) || "app";
-
 // Generate application
-
-createApplication(appName, destinationPath);
+createApplication("app", destinationPath);
 
 function mkdir(base, dir) {
   const loc = path.join(base, dir);
