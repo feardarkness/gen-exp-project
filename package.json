@@ -1,6 +1,6 @@
 {
   "name": "gen-exp-project",
-  "version": "0.0.4-dev",
+  "version": "0.0.6-dev",
   "description": "Simple express generator",
   "bin": {
     "express": "./bin/main.js"

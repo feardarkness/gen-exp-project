@@ -122,3 +122,8 @@ function writeFile(file, content, mode) {
   fs.writeFileSync(file, content, { mode: mode || MODE_0666 });
   console.log("Generating: " + file);
 }
+
+function write(file, str, mode) {
+  fs.writeFileSync(file, str, { mode: mode || MODE_0666 });
+  console.log("Creating : " + file);
+}
